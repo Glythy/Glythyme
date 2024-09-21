@@ -7,15 +7,14 @@
     <link rel="icon" href="https://github.com/Glythy/Glythyme/raw/main/LogotipoGlythy.png" type="image/png">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            overflow: auto; /* Permitir scroll para ver el contenido */
-            color: #f0f0f0; /* Color de texto claro */
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro transparente */
+            color: #f0f0f0; 
+            background-color: rgba(0, 0, 0, 0.85);
+            overflow-x: hidden; /* Evita que aparezca scroll horizontal */
         }
 
-        /* Estilo para el video de fondo */
         .video-background {
             position: fixed;
             top: 50%;
@@ -26,20 +25,26 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
+            opacity: 0.6; /* Suaviza el video de fondo */
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
-            color: white; /* Color de texto blanco */
-            padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: flex-end;
-            margin: 0;
+            margin: 10px 0 0 0;
             padding: 0;
         }
 
@@ -48,80 +53,96 @@
         }
 
         nav ul li a {
-            color: white; /* Color de enlace blanco */
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #ffcc00; /* Cambiar color en hover */
+            color: #ffcc00;
         }
 
         #destacados {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro y semi-transparente */
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.9);
             margin: 40px auto;
             width: 80%;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 10px; /* Bordes redondeados */
-        }
-
-        #destacados h2 {
-            color: #ffcc00; /* Color del título */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
             text-align: center;
         }
 
-        #destacados .juegos {
+        #destacados h2 {
+            color: #ffcc00;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .juegos {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .juego {
             flex: 1 1 300px;
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro para las tarjetas de juegos */
+            background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            transition: transform 0.3s; /* Efecto de hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
         }
 
         .juego:hover {
-            transform: translateY(-5px); /* Levantar el juego al hacer hover */
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
         }
 
         .juego img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .juego:hover img {
+            transform: scale(1.05);
         }
 
         .juego p {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y transparente para los párrafos */
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
-            border-radius: 5px; /* Bordes redondeados para los párrafos */
-            color: #f0f0f0; /* Color de texto claro */
+            border-radius: 5px;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        a.resaltado {
+            color: #ffcc00;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a.resaltado:hover {
+            color: #ffaa00;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
-            color: white; /* Color de texto blanco */
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
             text-align: center;
-            padding: 15px;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Estilo para resaltar el enlace de Plutonium */
-        .resaltado {
-            color: #ffcc00; /* Color resaltado */
-            font-weight: bold;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+
     <!-- Video de fondo -->
     <video autoplay muted loop class="video-background">
         <source src="https://github.com/Glythy/Glythyme/raw/main/eddoylqusldbmyfy.mp4" type="video/mp4">
@@ -148,37 +169,19 @@
                 <h3>Call of Duty: Black Ops II</h3>
                 <img src="https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png" alt="Call of Duty Black Ops II">
                 <p>
-                    Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Lanzado en noviembre de 2012, es la novena entrega de la serie Call of Duty y una secuela directa de Call of Duty: Black Ops.
+                    Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Ambientado en la Guerra Fría y un futuro cercano, este juego se destaca por sus múltiples finales y su inmersivo modo multijugador.
                 </p>
                 <p>
-                    Black Ops II se ambienta en dos líneas temporales: una durante la Guerra Fría en los años 80 y otra en 2025, en un futuro cercano. El jugador asume el papel de Alex Mason y su hijo, David Mason, explorando los efectos de sus acciones en el pasado y las implicaciones en un mundo futurista marcado por conflictos tecnológicos.
+                    <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">Instalar Plutonium</a>
                 </p>
-                <p>
-                    Características:
-                </p>
-                <ul>
-                    <li>Campaña con múltiples finales: La narrativa no lineal permite a los jugadores tomar decisiones que afectan el desarrollo de la historia y su conclusión.</li>
-                    <li>Modo multijugador robusto: Ofrece una amplia variedad de modos de juego, mapas y opciones de personalización.</li>
-                    <li>Zombis: Incluye un modo cooperativo que permite a los jugadores enfrentar oleadas de zombis.</li>
-                    <li>Gráficos y sonido: Presenta gráficos mejorados y un diseño de sonido envolvente que mejora la experiencia inmersiva del juego.</li>
-                </ul>
-                <p>
-                    Black Ops II fue aclamado por la crítica y los jugadores, destacándose por su narrativa, jugabilidad y la profundidad de su modo multijugador.
-                </p>
-                <p>
-                    Para instalarlo, debes descargar la carpeta en el siguiente enlace:https://drive.google.com/file/d/1llkfO-hu5Dp-LD1L3h5cXNh1qiMnQOZV/view Y https://drive.google.com/file/d/1hCJRy6L49ViBVHVwRoIALRTt3ztzaxGp/view. Cuando la hayas descargado, tendrás que descomprimirla y así podrás abrir Plutonium. Luego, deberás crear una cuenta en el siguiente foro: 
-                    <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">https://forum.plutonium.pw/</a>.
-                </p>
-                <p>
-                    Una vez que te registres, abre el archivo plutonium.exe e inicia sesión. Después de eso, busca el apartado de Black Ops 2 y ve a la opción GAME SETTINGS. Finalmente, selecciona la carpeta que descargaste.
-                </p>
+            </article>
             <article class="juego">
-    <h3>Hollow Knight</h3>
-    <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
-    <p>
-        Hollow Knight es un videojuego de acción y aventura desarrollado por Team Cherry. Ambientado en el reino subterráneo de Hallownest, los jugadores asumen el papel de un caballero sin nombre que explora un mundo interconectado lleno de misterios y enemigos. El juego destaca por su arte dibujado a mano, su atmósfera envolvente y su jugabilidad desafiante. Los jugadores pueden adquirir habilidades y mejorar su personaje a medida que avanzan, enfrentándose a jefes memorables y descubriendo la rica narrativa del juego a través de la exploración.
-    </p>
-</article>
+                <h3>Hollow Knight</h3>
+                <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
+                <p>
+                    Hollow Knight es un juego de acción y aventura ambientado en el reino subterráneo de Hallownest, donde exploras un mundo interconectado lleno de misterios y desafíos.
+                </p>
+            </article>
         </div>
     </section>
 
