@@ -6,119 +6,8 @@
     <title>Glythy Archivero</title>
     <link rel="icon" href="https://github.com/Glythy/Glythyme/raw/main/LogotipoGlythy.png" type="image/png">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: auto; /* Permitir scroll para ver el contenido */
-            color: #f0f0f0; /* Color de texto claro */
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro transparente */
-        }
-
-        /* Estilo para el video de fondo */
-        .video-background {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
-            color: white; /* Color de texto blanco */
-            padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: white; /* Color de enlace blanco */
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00; /* Cambiar color en hover */
-        }
-
-        #destacados {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro y semi-transparente */
-            margin: 40px auto;
-            width: 80%;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 10px; /* Bordes redondeados */
-        }
-
-        #destacados h2 {
-            color: #ffcc00; /* Color del título */
-            text-align: center;
-        }
-
-        #destacados .juegos {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .juego {
-            flex: 1 1 300px;
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro para las tarjetas de juegos */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            transition: transform 0.3s; /* Efecto de hover */
-        }
-
-        .juego:hover {
-            transform: translateY(-5px); /* Levantar el juego al hacer hover */
-        }
-
-        .juego img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .juego p {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y transparente para los párrafos */
-            padding: 10px;
-            border-radius: 5px; /* Bordes redondeados para los párrafos */
-            color: #f0f0f0; /* Color de texto claro */
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
-            color: white; /* Color de texto blanco */
-            text-align: center;
-            padding: 15px;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Estilo para resaltar el enlace de Plutonium */
-        .resaltado {
-            color: #ffcc00; /* Color resaltado */
-            font-weight: bold;
-        }
+        /* Tu estilo existente aquí */
+        /* ... */
     </style>
 </head>
 <body>
@@ -145,45 +34,44 @@
         <h2>Juegos Destacados</h2>
         <div class="juegos">
             <article class="juego">
-                <h3>Call of Duty: Black Ops II</h3>
-                <img src="https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png" alt="Call of Duty Black Ops II">
-                <p>
+                <h3 id="game-title">Call of Duty: Black Ops II</h3>
+                <img id="game-image" src="https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png" alt="Call of Duty Black Ops II">
+                <p id="game-description">
                     Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Lanzado en noviembre de 2012, es la novena entrega de la serie Call of Duty y una secuela directa de Call of Duty: Black Ops.
                 </p>
-                <p>
-                    Black Ops II se ambienta en dos líneas temporales: una durante la Guerra Fría en los años 80 y otra en 2025, en un futuro cercano. El jugador asume el papel de Alex Mason y su hijo, David Mason, explorando los efectos de sus acciones en el pasado y las implicaciones en un mundo futurista marcado por conflictos tecnológicos.
-                </p>
-                <p>
-                    Características:
-                </p>
-                <ul>
-                    <li>Campaña con múltiples finales: La narrativa no lineal permite a los jugadores tomar decisiones que afectan el desarrollo de la historia y su conclusión.</li>
-                    <li>Modo multijugador robusto: Ofrece una amplia variedad de modos de juego, mapas y opciones de personalización.</li>
-                    <li>Zombis: Incluye un modo cooperativo que permite a los jugadores enfrentar oleadas de zombis.</li>
-                    <li>Gráficos y sonido: Presenta gráficos mejorados y un diseño de sonido envolvente que mejora la experiencia inmersiva del juego.</li>
-                </ul>
-                <p>
-                    Black Ops II fue aclamado por la crítica y los jugadores, destacándose por su narrativa, jugabilidad y la profundidad de su modo multijugador.
-                </p>
-                <p>
-                    Para instalarlo, debes descargar la carpeta en el siguiente enlace. Cuando la hayas descargado, tendrás que descomprimirla y así podrás abrir Plutonium. Luego, deberás crear una cuenta en el siguiente foro: 
-                    <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">https://forum.plutonium.pw/</a>.
-                </p>
-                <p>
-                    Una vez que te registres, abre el archivo plutonium.exe e inicia sesión. Después de eso, busca el apartado de Black Ops 2 y ve a la opción GAME SETTINGS. Finalmente, selecciona la carpeta que descargaste.
-                </p>
-            <article class="juego">
-    <h3>Hollow Knight</h3>
-    <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
-    <p>
-        Hollow Knight es un videojuego de acción y aventura desarrollado por Team Cherry. Ambientado en el reino subterráneo de Hallownest, los jugadores asumen el papel de un caballero sin nombre que explora un mundo interconectado lleno de misterios y enemigos. El juego destaca por su arte dibujado a mano, su atmósfera envolvente y su jugabilidad desafiante. Los jugadores pueden adquirir habilidades y mejorar su personaje a medida que avanzan, enfrentándose a jefes memorables y descubriendo la rica narrativa del juego a través de la exploración.
-    </p>
-</article>
+                <!-- Resto de la información sobre el juego aquí -->
+            </article>
         </div>
+        <div id="arrow" style="text-align: center; cursor: pointer; font-size: 50px;">➡️</div>
     </section>
 
     <footer>
         <p>© 2024 Glythy Juegos - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+        const games = [
+            {
+                title: "Call of Duty: Black Ops II",
+                image: "https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png",
+                description: "Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision..."
+            },
+            {
+                title: "Hollow Knight",
+                image: "https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg",
+                description: "Hollow Knight es un videojuego de acción y aventura desarrollado por Team Cherry..."
+            },
+            // Agrega más juegos aquí
+        ];
+
+        let currentGameIndex = 0;
+
+        document.getElementById("arrow").addEventListener("click", function() {
+            currentGameIndex = (currentGameIndex + 1) % games.length;
+            document.getElementById("game-title").innerText = games[currentGameIndex].title;
+            document.getElementById("game-image").src = games[currentGameIndex].image;
+            document.getElementById("game-description").innerText = games[currentGameIndex].description;
+        });
+    </script>
 </body>
 </html>
