@@ -1,93 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlythyMe - Mi Archivero Público</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #1a1a2e;
-            color: #e94560;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1 {
-            font-size: 4em;
-            margin-bottom: 0.2em;
-            color: #e94560;
-        }
-        h2 {
-            font-size: 2em;
-            color: #0f3460;
-            margin-bottom: 20px;
-        }
-        .btn-toggle {
-            background-color: #e94560;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-toggle:hover {
-            background-color: #53354a;
-        }
-        .file-options {
-            margin-top: 20px;
-            display: none;
-            flex-direction: column;
-        }
-        .file-options a {
-            text-decoration: none;
-            color: #0f3460;
-            padding: 10px 20px;
-            border: 2px solid #53354a;
-            border-radius: 8px;
-            margin: 10px;
-            transition: background-color 0.3s ease;
-        }
-        .file-options a:hover {
-            background-color: #53354a;
-            color: white;
-        }
-    </style>
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
 
-    <!-- Título y subtítulo -->
-    <h1>GlythyMe</h1>
-    <h2>Mi Archivero Público</h2>
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+}
 
-    <!-- Botón para mostrar las opciones de archivos -->
-    <button class="btn-toggle" onclick="toggleFiles()">Mostrar Archivos</button>
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
 
-    <!-- Opciones de archivos (inicialmente ocultas) -->
-    <div class="file-options" id="fileOptions">
-        <a href="URL_DEL_ARCHIVO_1" download="archivo1">Archivo 1 - Descarga</a>
-        <a href="URL_DEL_ARCHIVO_2" download="archivo2">Archivo 2 - Descarga</a>
-        <a href="URL_DEL_ARCHIVO_3" download="archivo3">Archivo 3 - Descarga</a>
-    </div>
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
 
-    <!-- JavaScript para mostrar/ocultar las opciones -->
-    <script>
-        function toggleFiles() {
-            var fileOptions = document.getElementById("fileOptions");
-            if (fileOptions.style.display === "none" || fileOptions.style.display === "") {
-                fileOptions.style.display = "flex";
-            } else {
-                fileOptions.style.display = "none";
-            }
-        }
-    </script>
+section.downloads {
+    margin-top: 30px;
+}
 
-</body>
-</html>
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #61dafb;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+#fileOptions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#fileOptions li {
+    margin: 15px 0;
+}
+
+#fileOptions a {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+}
