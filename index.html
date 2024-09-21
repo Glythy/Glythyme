@@ -20,6 +20,7 @@
 
         header h1 {
             display: inline;
+            color: white; /* Mantengo el título en blanco */
         }
 
         nav ul {
@@ -35,9 +36,13 @@
         }
 
         nav ul li a {
-            color: white;
+            color: black; /* Cambiado a negro */
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Añadido un efecto hover para resaltar las opciones al pasar el mouse */
         }
 
         #destacados {
@@ -51,11 +56,11 @@
         #destacados .juegos {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap; /* Permite que los artículos se envuelvan en la línea */
+            flex-wrap: wrap;
         }
 
         .juego {
-            flex: 1 1 300px; /* Se adapta al tamaño disponible */
+            flex: 1 1 300px;
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
@@ -65,7 +70,7 @@
         .juego img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px; /* Bordes redondeados en la imagen */
+            border-radius: 5px;
         }
 
         footer {
@@ -73,7 +78,7 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative; /* Cambiado a relativo para evitar problemas en el diseño */
+            position: relative;
             width: 100%;
             bottom: 0;
         }
@@ -131,3 +136,4 @@
     </footer>
 </body>
 </html>
+
