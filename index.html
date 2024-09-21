@@ -7,12 +7,11 @@
     <link rel="icon" href="https://github.com/Glythy/Glythyme/raw/main/LogotipoGlythy.png" type="image/png">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #f0f0f0; 
-            background-color: rgba(0, 0, 0, 0.85);
-            overflow-x: hidden; /* Evita que aparezca scroll horizontal */
+            color: #f0f0f0;
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
         .video-background {
@@ -25,35 +24,36 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
-            opacity: 0.6; /* Suaviza el video de fondo */
+            opacity: 0.7;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.85);
-            color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin: 0;
+            display: inline-block;
         }
 
         nav ul {
             list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            margin: 10px 0 0 0;
+            margin: 0;
             padding: 0;
+            float: right;
         }
 
         nav ul li {
+            display: inline-block;
             margin-left: 20px;
         }
 
         nav ul li a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
@@ -65,40 +65,39 @@
 
         #destacados {
             padding: 40px 20px;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.85);
             margin: 40px auto;
             width: 80%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             text-align: center;
         }
 
         #destacados h2 {
             color: #ffcc00;
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 20px;
         }
 
         .juegos {
             display: flex;
-            gap: 20px;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         .juego {
-            flex: 1 1 300px;
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
+            margin: 10px;
+            width: calc(50% - 20px);
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
         }
 
         .juego:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
         .juego img {
@@ -106,11 +105,6 @@
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
-            transition: transform 0.3s;
-        }
-
-        .juego:hover img {
-            transform: scale(1.05);
         }
 
         .juego p {
@@ -118,26 +112,27 @@
             padding: 10px;
             border-radius: 5px;
             color: #f0f0f0;
-            line-height: 1.6;
         }
 
         a.resaltado {
             color: #ffcc00;
             font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        a.resaltado:hover {
-            color: #ffaa00;
         }
 
         footer {
             background-color: rgba(0, 0, 0, 0.85);
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 0.9em;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .juego {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -169,17 +164,24 @@
                 <h3>Call of Duty: Black Ops II</h3>
                 <img src="https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png" alt="Call of Duty Black Ops II">
                 <p>
-                    Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Ambientado en la Guerra Fría y un futuro cercano, este juego se destaca por sus múltiples finales y su inmersivo modo multijugador.
+                    Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Lanzado en 2012, ofrece una narrativa no lineal con múltiples finales y un multijugador robusto.
                 </p>
                 <p>
-                    <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">Instalar Plutonium</a>
+                    Para instalarlo, descarga los siguientes enlaces:
+                    <a href="https://drive.google.com/file/d/1llkfO-hu5Dp-LD1L3h5cXNh1qiMnQOZV/view" target="_blank">Enlace 1</a> y 
+                    <a href="https://drive.google.com/file/d/1hCJRy6L49ViBVHVwRoIALRTt3ztzaxGp/view" target="_blank">Enlace 2</a>.
+                </p>
+                <p>
+                    Regístrate en el foro de Plutonium: 
+                    <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">Plutonium Forum</a>.
                 </p>
             </article>
+
             <article class="juego">
                 <h3>Hollow Knight</h3>
                 <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
                 <p>
-                    Hollow Knight es un juego de acción y aventura ambientado en el reino subterráneo de Hallownest, donde exploras un mundo interconectado lleno de misterios y desafíos.
+                    Hollow Knight es un videojuego de acción y aventura donde exploras el misterioso reino subterráneo de Hallownest. Con un diseño artístico dibujado a mano y una jugabilidad desafiante, el juego es aclamado por su atmósfera inmersiva.
                 </p>
             </article>
         </div>
