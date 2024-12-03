@@ -63,7 +63,7 @@
             color: #ffcc00;
         }
 
-        #destacados {
+        #destacados, #galeria, #contacto, #testimonios {
             padding: 40px 20px;
             background-color: rgba(0, 0, 0, 0.85);
             margin: 40px auto;
@@ -73,19 +73,19 @@
             text-align: center;
         }
 
-        #destacados h2 {
+        #destacados h2, #galeria h2, #contacto h2, #testimonios h2 {
             color: #ffcc00;
             font-size: 2em;
             margin-bottom: 20px;
         }
 
-        .juegos {
+        .juegos, .galeria-imagenes {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        .juego {
+        .juego, .imagen {
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             margin: 10px;
@@ -95,19 +95,19 @@
             transition: transform 0.3s ease-in-out, box-shadow 0.3s;
         }
 
-        .juego:hover {
+        .juego:hover, .imagen:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .juego img {
+        .juego img, .imagen img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
         }
 
-        .juego p {
+        .juego p, .imagen p {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 5px;
@@ -130,9 +130,47 @@
         }
 
         @media (max-width: 768px) {
-            .juego {
+            .juego, .imagen {
                 width: 100%;
             }
+        }
+
+        #contacto form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contacto input, #contacto textarea {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #contacto button {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contacto button:hover {
+            background-color: #e6b800;
+        }
+
+        #testimonios {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .testimonio {
+            margin: 10px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -188,6 +226,74 @@
                     <a href="https://www.mediafire.com/file/qq9utu8p516rqi0/Hollow_Knight.rar/file" target="_blank">Descargar Hollow Knight</a>.
                 </p>
             </article>
+
+            <article class="juego">
+                <h3>The Witcher 3: Wild Hunt</h3>
+                <img src="https://example.com/witcher3.jpg" alt="The Witcher 3">
+                <p>
+                    The Witcher 3: Wild Hunt es un juego de rol de acción en un mundo abierto, donde juegas como Geralt de Rivia, un cazador de monstruos. Con una narrativa rica y un mundo inmenso, es uno de los mejores juegos de la década.
+                </p>
+                <p>
+                    Puedes encontrar más información y descargas en su página oficial.
+                </p>
+            </article>
+
+            <article class="juego">
+                <h3>Celeste</h3>
+                <img src="https://example.com/celeste.jpg" alt="Celeste">
+                <p>
+                    Celeste es un juego de plataformas que sigue la historia de Madeline mientras intenta escalar la montaña Celeste. Con su jugabilidad desafiante y su hermosa narrativa, ha sido aclamado por la crítica.
+                </p>
+                <p>
+                    Puedes descargar Celeste desde su página oficial o en Steam.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria-imagenes">
+            <div class="imagen">
+                <img src="https://example.com/imagen1.jpg" alt="Imagen 1">
+                <p>Descripción de la imagen 1.</p>
+            </div>
+            <div class="imagen">
+                <img src="https://example.com/imagen2.jpg" alt="Imagen 2">
+                <p>Descripción de la imagen 2.</p>
+            </div>
+            <div class="imagen">
+                <img src="https://example.com/imagen3.jpg" alt="Imagen 3">
+                <p>Descripción de la imagen 3.</p>
+            </div>
+            <div class="imagen">
+                <img src="https://example.com/imagen4.jpg" alt="Imagen 4">
+                <p>Descripción de la imagen 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</p>
+        <form action="#">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio">
+            <p><strong>Juan Pérez:</strong> "Glythy Juegos ha transformado mi forma de jugar. ¡Los mejores juegos y reseñas!"</p>
+        </div>
+        <div class="testimonio">
+            <p><strong>María López:</strong> "Me encanta la variedad de juegos que ofrecen. ¡Siempre regreso por más!"</p>
+        </div>
+        <div class="testimonio">
+            <p><strong>Carlos García:</strong> "Un sitio increíble para descubrir nuevos juegos. ¡Gracias, Glythy!"</p>
         </div>
     </section>
 
