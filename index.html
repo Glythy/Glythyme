@@ -63,7 +63,7 @@
             color: #ffcc00;
         }
 
-        #destacados, #galeria, #contacto, #testimonios {
+        #destacados, #galeria, #noticias, #articulos, #contacto, #faq, #testimonios {
             padding: 40px 20px;
             background-color: rgba(0, 0, 0, 0.85);
             margin: 40px auto;
@@ -73,19 +73,19 @@
             text-align: center;
         }
 
-        #destacados h2, #galeria h2, #contacto h2, #testimonios h2 {
+        #destacados h2, #galeria h2, #contacto h2, #testimonios h2, #faq h2, #noticias h2, #articulos h2 {
             color: #ffcc00;
             font-size: 2em;
             margin-bottom: 20px;
         }
 
-        .juegos, .galeria-imagenes {
+        .juegos, .galeria-imagenes, .faq-item, .articulo {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        .juego, .imagen {
+        .juego, .imagen, .faq-item, .articulo {
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             margin: 10px;
@@ -95,7 +95,7 @@
             transition: transform 0.3s ease-in-out, box-shadow 0.3s;
         }
 
-        .juego:hover, .imagen:hover {
+        .juego:hover, .imagen:hover, .faq-item:hover, .articulo:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
@@ -107,7 +107,7 @@
             margin-bottom: 15px;
         }
 
-        .juego p, .imagen p {
+        .juego p, .imagen p, .faq-item p, .articulo p {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 5px;
@@ -233,9 +233,6 @@
                 <p>
                     The Witcher 3: Wild Hunt es un juego de rol de acción en un mundo abierto, donde juegas como Geralt de Rivia, un cazador de monstruos. Con una narrativa rica y un mundo inmenso, es uno de los mejores juegos de la década.
                 </p>
-                <p>
-                    Puedes encontrar más información y descargas en su página oficial.
-                </p>
             </article>
 
             <article class="juego">
@@ -243,9 +240,6 @@
                 <img src="https://example.com/celeste.jpg" alt="Celeste">
                 <p>
                     Celeste es un juego de plataformas que sigue la historia de Madeline mientras intenta escalar la montaña Celeste. Con su jugabilidad desafiante y su hermosa narrativa, ha sido aclamado por la crítica.
-                </p>
-                <p>
-                    Puedes descargar Celeste desde su página oficial o en Steam.
                 </p>
             </article>
         </div>
@@ -273,9 +267,60 @@
         </div>
     </section>
 
+    <section id="noticias">
+        <h2>Noticias</h2>
+        <ul>
+            <li>Nuevo DLC para <a href="#">Call of Duty: Black Ops II</a> anunciado</li>
+            <li><a href="#">Hollow Knight</a> recibe una actualización importante</li>
+            <li>Los desarrolladores de <a href="#">The Witcher 3</a> hablan sobre nuevas expansiones</li>
+            <li>Overwatch 2 planea grandes cambios en la jugabilidad</li>
+            <li>Grand Theft Auto VI ha sido confirmado</li>
+        </ul>
+    </section>
+
+    <section id="articulos">
+        <h2>Artículos de Interés</h2>
+        <div class="articulo">
+            <h3>Cómo Mejorar tu Experiencia en Hollow Knight</h3>
+            <p>Explora estos consejos para mejorar tu rendimiento y disfrutar aún más del juego.</p>
+            <p>Si deseas conocer más, haz clic <a href="#">aquí</a>.</p>
+        </div>
+        <div class="articulo">
+            <h3>Guía Completa de Call of Duty: Black Ops II</h3>
+            <p>Un vistazo a las mejores estrategias y trucos para jugar Black Ops II.</p>
+        </div>
+        <div class="articulo">
+            <h3>Todo lo que Necesitas Saber sobre Overwatch</h3>
+            <p>Un análisis profundo del universo de Overwatch y sus héroes.</p>
+        </div>
+        <div class="articulo">
+            <h3>Red Dead Redemption 2: Consejos y Trucos</h3>
+            <p>Descubre cómo sobrevivir en el Oeste y maximizar tu experiencia en Red Dead Redemption 2.</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+        <div class="faq-item">
+            <h3>¿Cómo puedo descargar un juego?</h3>
+            <p>Simplemente ve a la página del juego en el sitio web, y encontrarás los enlaces de descarga en la sección correspondiente.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Necesito una cuenta para acceder a los juegos?</h3>
+            <p>No es necesario tener una cuenta, pero algunas funciones, como los comentarios y las reseñas, sí requieren que te registres.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Puedo jugar en línea con mis amigos?</h3>
+            <p>Sí, muchos de nuestros juegos soportan modo multijugador en línea para jugar con amigos.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Cómo puedo contactar con soporte?</h3>
+            <p>Si necesitas ayuda, puedes ponerte en contacto con nosotros a través de nuestro formulario de contacto.</p>
+        </div>
+    </section>
+
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</p>
         <form action="#">
             <input type="text" placeholder="Tu nombre" required>
             <input type="email" placeholder="Tu correo electrónico" required>
@@ -287,7 +332,7 @@
     <section id="testimonios">
         <h2>Testimonios</h2>
         <div class="testimonio">
-            <p><strong>Juan Pérez:</strong> "Glythy Juegos ha transformado mi forma de jugar. ¡Los mejores juegos y reseñas!"</p>
+            <p><strong>Juan Pérez:</strong> "Glythy Archivero ha transformado mi forma de jugar. ¡Los mejores juegos y reseñas!"</p>
         </div>
         <div class="testimonio">
             <p><strong>María López:</strong> "Me encanta la variedad de juegos que ofrecen. ¡Siempre regreso por más!"</p>
@@ -298,7 +343,8 @@
     </section>
 
     <footer>
-        <p>© 2024 Glythy Juegos - Todos los derechos reservados</p>
+        <p>© 2024 Glythy Archivero - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
