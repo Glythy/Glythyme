@@ -153,32 +153,30 @@
             }
         }
 
-        #contacto form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #contacto input, #contacto textarea {
-            width: 80%;
-            margin: 10px 0;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        #contacto button {
+        .btn {
+            display: inline-block;
             padding: 10px 20px;
-            background-color: #ffcc00;
-            border: none;
+            margin: 10px 0;
             border-radius: 5px;
-            cursor: pointer;
+            background-color: #ffcc00;
+            color: #121212;
+            text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        #contacto button:hover {
+        .btn:hover {
             background-color: #e6b800;
+            color: #f0f0f0;
+        }
+
+        .juego h3, .imagen h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .juego p, .imagen p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -213,8 +211,8 @@
                     </p>
                     <p>
                         Para instalarlo, descarga los siguientes enlaces:
-                        <a href="https://drive.google.com/file/d/1llkfO-hu5Dp-LD1L3h5cXNh1qiMnQOZV/view" target="_blank">Black ops 2</a> y 
-                        <a href="https://drive.google.com/file/d/1hCJRy6L49ViBVHVwRoIALRTt3ztzaxGp/view" target="_blank">Plutonium </a>.
+                        <a href="https://drive.google.com/file/d/1llkfO-hu5Dp-LD1L3h5cXNh1qiMnQOZV/view" target="_blank" class="btn">Black ops 2</a> y 
+                        <a href="https://drive.google.com/file/d/1hCJRy6L49ViBVHVwRoIALRTt3ztzaxGp/view" target="_blank" class="btn">Plutonium </a>.
                     </p>
                     <p>
                         Regístrate en el foro de Plutonium: 
@@ -230,7 +228,7 @@
                     </p>
                     <p>
                         Para descargar Hollow Knight, utiliza el siguiente enlace:
-                        <a href="https://www.mediafire.com/file/qq9utu8p516rqi0/Hollow_Knight.rar/file" target="_blank">Descargar Hollow Knight</a>.
+                        <a href="https://www.mediafire.com/file/qq9utu8p516rqi0/Hollow_Knight.rar/file" target="_blank" class="btn">Descargar Hollow Knight</a>.
                     </p>
                 </article>
             </div>
@@ -258,14 +256,11 @@
             </div>
         </section>
 
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <form action="send_email.php" method="POST">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section id="sugerencia" class="section">
+            <h2>Sugerencia de Juegos</h2>
+            <p>
+                Si quieren que agregue un juego, el que quieren contactense por este gmail: githubtomas@gmail.com
+            </p>
         </section>
     </div>
 
