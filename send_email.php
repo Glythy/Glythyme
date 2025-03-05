@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica que los campos no estén vacíos
     if (!empty($nombre) && !empty($email) && !empty($mensaje)) {
         // Dirección de correo electrónico del destinatario
-        $recipient = "githubtomas@gmail.com"; // Dirección de correo electrónico especificada por el usuario
+        $recipient = "githubtomas@gmail.com";
 
         // Asunto del correo electrónico
         $subject = "Nuevo mensaje de contacto de $nombre";
