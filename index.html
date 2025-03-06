@@ -97,13 +97,13 @@
             font-weight: 700;
         }
 
-        .juegos, .galeria-imagenes {
+        .juegos {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        .juego, .imagen {
+        .juego {
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             margin: 10px;
@@ -113,28 +113,23 @@
             transition: transform 0.3s ease-in-out, box-shadow 0.3s;
         }
 
-        .juego:hover, .imagen:hover {
+        .juego:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .juego img, .imagen img {
+        .juego img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
         }
 
-        .juego p, .imagen p {
+        .juego p {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 5px;
             color: #f0f0f0;
-        }
-
-        a.resaltado {
-            color: #ffcc00;
-            font-weight: bold;
         }
 
         footer {
@@ -148,7 +143,7 @@
         }
 
         @media (max-width: 768px) {
-            .juego, .imagen {
+            .juego {
                 width: 100%;
             }
         }
@@ -170,12 +165,12 @@
             color: #f0f0f0;
         }
 
-        .juego h3, .imagen h3 {
+        .juego h3 {
             color: #ffcc00;
             margin-bottom: 10px;
         }
 
-        .juego p, .imagen p {
+        .juego p {
             line-height: 1.6;
         }
     </style>
@@ -200,35 +195,11 @@
     </header>
 
     <div class="content">
-        <section id="call-of-duty" class="section">
-            <h2>Saga Call of Duty</h2>
+        <section id="accion-aventura" class="section">
+            <h2>🎮 Acción y Aventura</h2>
             <div class="juegos">
                 <article class="juego">
-                    <h3>Call of Duty: Black Ops II</h3>
-                    <img src="https://github.com/Glythy/Glythyme/raw/main/Call_of_Duty_Black_Ops_II_box_artwork.png" alt="Call of Duty Black Ops II">
-                    <p>
-                        Call of Duty: Black Ops II es un videojuego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Lanzado en 2012, ofrece una narrativa no lineal[...]
-                    </p>
-                    <p>
-                        Para instalarlo, descarga los siguientes enlaces:
-                        <a href="https://drive.google.com/file/d/1llkfO-hu5Dp-LD1L3h5cXNh1qiMnQOZV/view" target="_blank" class="btn">Black ops 2</a> y 
-                        <a href="https://drive.google.com/file/d/1hCJRy6L49ViBVHVwRoIALRTt3ztzaxGp/view" target="_blank" class="btn">Plutonium</a>.
-                    </p>
-                    <p>
-                        Regístrate en el foro de Plutonium: 
-                        <a class="resaltado" href="https://forum.plutonium.pw/" target="_blank">Plutonium Forum</a>.
-                    </p>
-                </article>
-
-                <!-- Aquí puedes agregar más juegos de la saga Call of Duty -->
-            </div>
-        </section>
-
-        <section id="indie" class="section">
-            <h2>Juegos Indie</h2>
-            <div class="juegos">
-                <article class="juego">
-                    <h3>Hollow Knight</h3>
+                    <h3>Hollow Knight 🏆</h3>
                     <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
                     <p>
                         Hollow Knight es un videojuego de acción y aventura donde exploras el misterioso reino subterráneo de Hallownest. Con un diseño artístico dibujado a mano y una jugabilidad [...]
@@ -238,38 +209,198 @@
                         <a href="https://www.mediafire.com/file/qq9utu8p516rqi0/Hollow_Knight.rar/file" target="_blank" class="btn">Descargar Hollow Knight</a>.
                     </p>
                 </article>
-
-                <!-- Aquí puedes agregar más juegos indie -->
+                <article class="juego">
+                    <h3>Celeste ❄️</h3>
+                    <img src="https://example.com/celeste.jpg" alt="Celeste">
+                    <p>
+                        Celeste es un videojuego de plataformas con una historia emocional. Ayuda a Madeline a superar sus desafíos en una montaña llena de peligros y secretos.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Hyper Light Drifter ⚡</h3>
+                    <img src="https://example.com/hyper_light_drifter.jpg" alt="Hyper Light Drifter">
+                    <p>
+                        Hyper Light Drifter es un juego de acción isométrica con un impresionante pixel art. Explora un mundo vasto y misterioso mientras luchas contra enemigos y descubres secretos.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Katana ZERO 🔪</h3>
+                    <img src="https://example.com/katana_zero.jpg" alt="Katana ZERO">
+                    <p>
+                        Katana ZERO es un juego de acción rápida con mecánicas de manipulación del tiempo. Enfréntate a enemigos y resuelve situaciones con precisión y estrategia.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section id="galeria" class="section">
-            <h2>Galería de Imágenes</h2>
-            <div class="galeria-imagenes">
-                <div class="imagen">
-                    <img src="https://example.com/imagen1.jpg" alt="Imagen 1">
-                    <p>Descripción de la imagen 1.</p>
-                </div>
-                <div class="imagen">
-                    <img src="https://example.com/imagen2.jpg" alt="Imagen 2">
-                    <p>Descripción de la imagen 2.</p>
-                </div>
-                <div class="imagen">
-                    <img src="https://example.com/imagen3.jpg" alt="Imagen 3">
-                    <p>Descripción de la imagen 3.</p>
-                </div>
-                <div class="imagen">
-                    <img src="https://example.com/imagen4.jpg" alt="Imagen 4">
-                    <p>Descripción de la imagen 4.</p>
-                </div>
+        <section id="puzzle-plataformas" class="section">
+            <h2>🧩 Puzzle y Plataformas</h2>
+            <div class="juegos">
+                <article class="juego">
+                    <h3>The Witness 🔲</h3>
+                    <img src="https://example.com/the_witness.jpg" alt="The Witness">
+                    <p>
+                        The Witness es un juego de rompecabezas en un mundo abierto lleno de secretos. Resuelve una serie de desafiantes puzles mientras exploras una isla misteriosa.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Baba Is You 🔤</h3>
+                    <img src="https://example.com/baba_is_you.jpg" alt="Baba Is You">
+                    <p>
+                        Baba Is You es un innovador juego de puzles con mecánicas de programación. Cambia las reglas del juego para resolver los desafíos y avanzar.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Inside ⚫</h3>
+                    <img src="https://example.com/inside.jpg" alt="Inside">
+                    <p>
+                        Inside es una oscura aventura con rompecabezas ambientales. Acompaña a un niño en su travesía a través de un mundo distópico lleno de peligros.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>FEZ 🔄</h3>
+                    <img src="https://example.com/fez.jpg" alt="FEZ">
+                    <p>
+                        FEZ es un juego de exploración y rompecabezas en 2D con una perspectiva 3D única. Descubre un mundo lleno de secretos y desafíos mientras rotas el entorno.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section id="sugerencia" class="section">
-            <h2>Sugerencia de Juegos</h2>
-            <p>
-                Si quieren que agregue un juego, el que quieren contactense por este gmail: githubtomas@gmail.com
-            </p>
+        <section id="supervivencia-sandbox" class="section">
+            <h2>🌿 Supervivencia y Sandbox</h2>
+            <div class="juegos">
+                <article class="juego">
+                    <h3>Terraria ⛏️</h3>
+                    <img src="https://example.com/terraria.jpg" alt="Terraria">
+                    <p>
+                        Terraria es un juego de mundo abierto con construcción, exploración y combate. Cava, lucha, construye y explora un vasto mundo lleno de aventuras.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Don't Starve 🌲</h3>
+                    <img src="https://example.com/dont_starve.jpg" alt="Don't Starve">
+                    <p>
+                        Don't Starve es un juego de supervivencia con una estética única y mecánicas profundas. Sobrevive en un mundo hostil lleno de criaturas extrañas y peligros.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Raft 🏝️</h3>
+                    <img src="https://example.com/raft.jpg" alt="Raft">
+                    <p>
+                        Raft es un juego de supervivencia en el océano con construcción y exploración. Construye y mejora tu balsa mientras navegas por aguas peligrosas y descubres nuevas islas.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Astroneer 🚀</h3>
+                    <img src="https://example.com/astroneer.jpg" alt="Astroneer">
+                    <p>
+                        Astroneer es un juego de exploración y construcción en un mundo espacial. Explora planetas, recolecta recursos y construye bases mientras desentrañas los misterios del universo.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="rpg-estrategia" class="section">
+            <h2>👾 RPG y Estrategia</h2>
+            <div class="juegos">
+                <article class="juego">
+                    <h3>Undertale 💀</h3>
+                    <img src="https://example.com/undertale.jpg" alt="Undertale">
+                    <p>
+                        Undertale es un RPG con mecánicas únicas y una historia conmovedora. Interactúa con personajes memorables y toma decisiones que afectan el desarrollo del juego.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Stardew Valley 🌾</h3>
+                    <img src="https://example.com/stardew_valley.jpg" alt="Stardew Valley">
+                    <p>
+                        Stardew Valley es una simulación de granja con historia y personajes entrañables. Cultiva, cría animales, pesca y forma relaciones en una comunidad encantadora.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Slay the Spire 🃏</h3>
+                    <img src="https://example.com/slay_the_spire.jpg" alt="Slay the Spire">
+                    <p>
+                        Slay the Spire es un roguelike de cartas con estrategia profunda. Construye tu mazo, enfrenta enemigos y asciende la torre en este desafiante juego de cartas.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Loop Hero 🔄</h3>
+                    <img src="https://example.com/loop_hero.jpg" alt="Loop Hero">
+                    <p>
+                        Loop Hero es un juego de estrategia con mecánicas innovadoras de bucles. Coloca cartas para construir el mundo y enfrenta desafíos en un ciclo interminable.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="carreras-simulacion" class="section">
+            <h2>🚗 Carreras y Simulación</h2>
+            <div class="juegos">
+                <article class="juego">
+                    <h3>Art of Rally 🏁</h3>
+                    <img src="https://example.com/art_of_rally.jpg" alt="Art of Rally">
+                    <p>
+                        Art of Rally es un juego de carreras con una estética minimalista y controles precisos. Conduce a través de hermosos paisajes y participa en emocionantes rallys.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>My Summer Car 🚙</h3>
+                    <img src="https://example.com/my_summer_car.jpg" alt="My Summer Car">
+                    <p>
+                        My Summer Car es un juego de simulación de construcción de autos con humor. Construye y personaliza tu coche mientras sobrevives en un entorno rural finlandés.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Descenders 🚵</h3>
+                    <img src="https://example.com/descenders.jpg" alt="Descenders">
+                    <p>
+                        Descenders es un juego de ciclismo de descenso con físicas realistas. Realiza trucos y desciende por pistas desafiantes en este emocionante juego de deportes extremos.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Euro Truck Simulator 2 🚛</h3>
+                    <img src="https://example.com/euro_truck_simulator_2.jpg" alt="Euro Truck Simulator 2">
+                    <p>
+                        Euro Truck Simulator 2 es un juego de simulación de conducción de camiones. Recorre Europa, entrega cargas y construye tu imperio de transporte en este detallado simulador.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="roguelike-hack-slash" class="section">
+            <h2>🏹 Roguelike y Hack & Slash</h2>
+            <div class="juegos">
+                <article class="juego">
+                    <h3>Hades 🔥</h3>
+                    <img src="https://example.com/hades.jpg" alt="Hades">
+                    <p>
+                        Hades es un juego de acción frenética con una historia envolvente. Lucha a través del inframundo griego y desentraña la historia de los dioses en este aclamado título.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Dead Cells ⚔️</h3>
+                    <img src="https://example.com/dead_cells.jpg" alt="Dead Cells">
+                    <p>
+                        Dead Cells es un metroidvania con elementos roguelike. Explora un castillo en constante cambio, derrota enemigos y mejora tus habilidades en este desafiante juego de acción.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Risk of Rain 2 🌧️</h3>
+                    <img src="https://example.com/risk_of_rain_2.jpg" alt="Risk of Rain 2">
+                    <p>
+                        Risk of Rain 2 es un shooter en tercera persona con progresión roguelike. Enfrenta hordas de enemigos, mejora tus habilidades y descubre secretos en un mundo alienígena.
+                    </p>
+                </article>
+                <article class="juego">
+                    <h3>Noita 🔥</h3>
+                    <img src="https://example.com/noita.jpg" alt="Noita">
+                    <p>
+                        Noita es un roguelike con física avanzada y magia dinámica. Explora un mundo pixelado, experimenta con hechizos y enfrenta desafíos en este innovador juego de acción.
+                    </p>
+                </article>
+            </div>
         </section>
     </div>
 
