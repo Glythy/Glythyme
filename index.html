@@ -91,6 +91,10 @@
             display: none; /* Ocultar todas las secciones por defecto */
         }
 
+        .section.active {
+            display: block; /* Mostrar la sección activa */
+        }
+
         .section h2 {
             color: #ffcc00;
             font-size: 2.5em;
@@ -133,31 +137,26 @@
             color: #f0f0f0;
         }
 
-        .search-bar {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .search-bar input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 1em;
-        }
-
         .menu-bar {
             text-align: center;
             padding: 20px;
         }
 
-        .menu-bar select {
-            padding: 10px;
+        .menu-bar a {
+            padding: 10px 20px;
             border-radius: 5px;
             border: none;
             font-size: 1em;
             background-color: #121212;
             color: #f0f0f0;
+            text-decoration: none;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .menu-bar a:hover {
+            background-color: #ffcc00;
+            color: #121212;
         }
 
         footer {
@@ -223,20 +222,13 @@
     </header>
 
     <div class="content">
-        <section class="search-bar">
-            <input type="text" id="searchInput" placeholder="Buscar juegos...">
-        </section>
-
         <section class="menu-bar">
-            <select id="categorySelect">
-                <option value="all">Todas las categorías</option>
-                <option value="accion-aventura">Acción y Aventura</option>
-                <option value="puzzle-plataformas">Puzzle y Plataformas</option>
-                <option value="supervivencia-sandbox">Supervivencia y Sandbox</option>
-                <option value="rpg-estrategia">RPG y Estrategia</option>
-                <option value="carreras-simulacion">Carreras y Simulación</option>
-                <option value="roguelike-hack-slash">Roguelike y Hack & Slash</option>
-            </select>
+            <a href="#accion-aventura">Acción y Aventura</a>
+            <a href="#puzzle-plataformas">Puzzle y Plataformas</a>
+            <a href="#supervivencia-sandbox">Supervivencia y Sandbox</a>
+            <a href="#rpg-estrategia">RPG y Estrategia</a>
+            <a href="#carreras-simulacion">Carreras y Simulación</a>
+            <a href="#roguelike-hack-slash">Roguelike y Hack & Slash</a>
         </section>
 
         <section id="accion-aventura" class="section">
@@ -431,4 +423,7 @@
                     </p>
                 </article>
                 <article class="juego">
-                    <h3>
+                    <h3>Risk of Rain 2 🌧️</h3>
+                    <img src="https://example.com/risk_of_rain_2.jpg" alt="Risk of Rain 2">
+                    <p>
+                       
