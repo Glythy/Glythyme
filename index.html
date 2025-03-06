@@ -132,6 +132,33 @@
             color: #f0f0f0;
         }
 
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .menu-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-bar select {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
         footer {
             background-color: rgba(0, 0, 0, 0.85);
             color: white;
@@ -195,9 +222,25 @@
     </header>
 
     <div class="content">
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar juegos...">
+        </section>
+
+        <section class="menu-bar">
+            <select id="categorySelect">
+                <option value="all">Todas las categorías</option>
+                <option value="accion-aventura">Acción y Aventura</option>
+                <option value="puzzle-plataformas">Puzzle y Plataformas</option>
+                <option value="supervivencia-sandbox">Supervivencia y Sandbox</option>
+                <option value="rpg-estrategia">RPG y Estrategia</option>
+                <option value="carreras-simulacion">Carreras y Simulación</option>
+                <option value="roguelike-hack-slash">Roguelike y Hack & Slash</option>
+            </select>
+        </section>
+
         <section id="accion-aventura" class="section">
             <h2>🎮 Acción y Aventura</h2>
-            <div class="juegos">
+            <div class="juegos" id="accion-aventura-juegos">
                 <article class="juego">
                     <h3>Hollow Knight 🏆</h3>
                     <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Hollow%20Knight.jpeg" alt="Hollow Knight">
@@ -235,7 +278,7 @@
 
         <section id="puzzle-plataformas" class="section">
             <h2>🧩 Puzzle y Plataformas</h2>
-            <div class="juegos">
+            <div class="juegos" id="puzzle-plataformas-juegos">
                 <article class="juego">
                     <h3>The Witness 🔲</h3>
                     <img src="https://example.com/the_witness.jpg" alt="The Witness">
@@ -269,7 +312,7 @@
 
         <section id="supervivencia-sandbox" class="section">
             <h2>🌿 Supervivencia y Sandbox</h2>
-            <div class="juegos">
+            <div class="juegos" id="supervivencia-sandbox-juegos">
                 <article class="juego">
                     <h3>Terraria ⛏️</h3>
                     <img src="https://example.com/terraria.jpg" alt="Terraria">
@@ -303,7 +346,7 @@
 
         <section id="rpg-estrategia" class="section">
             <h2>👾 RPG y Estrategia</h2>
-            <div class="juegos">
+            <div class="juegos" id="rpg-estrategia-juegos">
                 <article class="juego">
                     <h3>Undertale 💀</h3>
                     <img src="https://example.com/undertale.jpg" alt="Undertale">
@@ -337,7 +380,7 @@
 
         <section id="carreras-simulacion" class="section">
             <h2>🚗 Carreras y Simulación</h2>
-            <div class="juegos">
+            <div class="juegos" id="carreras-simulacion-juegos">
                 <article class="juego">
                     <h3>Art of Rally 🏁</h3>
                     <img src="https://example.com/art_of_rally.jpg" alt="Art of Rally">
@@ -371,7 +414,7 @@
 
         <section id="roguelike-hack-slash" class="section">
             <h2>🏹 Roguelike y Hack & Slash</h2>
-            <div class="juegos">
+            <div class="juegos" id="roguelike-hack-slash-juegos">
                 <article class="juego">
                     <h3>Hades 🔥</h3>
                     <img src="https://example.com/hades.jpg" alt="Hades">
@@ -383,29 +426,4 @@
                     <h3>Dead Cells ⚔️</h3>
                     <img src="https://example.com/dead_cells.jpg" alt="Dead Cells">
                     <p>
-                        Dead Cells es un metroidvania con elementos roguelike. Explora un castillo en constante cambio, derrota enemigos y mejora tus habilidades en este desafiante juego de acción.
-                    </p>
-                </article>
-                <article class="juego">
-                    <h3>Risk of Rain 2 🌧️</h3>
-                    <img src="https://example.com/risk_of_rain_2.jpg" alt="Risk of Rain 2">
-                    <p>
-                        Risk of Rain 2 es un shooter en tercera persona con progresión roguelike. Enfrenta hordas de enemigos, mejora tus habilidades y descubre secretos en un mundo alienígena.
-                    </p>
-                </article>
-                <article class="juego">
-                    <h3>Noita 🔥</h3>
-                    <img src="https://example.com/noita.jpg" alt="Noita">
-                    <p>
-                        Noita es un roguelike con física avanzada y magia dinámica. Explora un mundo pixelado, experimenta con hechizos y enfrenta desafíos en este innovador juego de acción.
-                    </p>
-                </article>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2025 Tom Free Games - Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
+                        Dead Cells es un metroidvania con elementos roguelike. Explora un castillo en constante cambio, derrota enemigos y mejora tus habilidades en este desafiante juego
