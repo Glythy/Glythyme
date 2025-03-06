@@ -38,10 +38,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             margin: 0;
             font-weight: 700;
             display: flex;
@@ -59,6 +60,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
@@ -92,7 +94,7 @@
 
         .section h2 {
             color: #ffcc00;
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 20px;
             font-weight: 700;
         }
@@ -143,6 +145,23 @@
         }
 
         @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section {
+                width: 90%;
+            }
+
             .juego {
                 width: 100%;
             }
@@ -383,17 +402,4 @@
                         Don't Starve es un juego de supervivencia con una estética única y mecánicas profundas. Sobrevive en un mundo hostil lleno de criaturas extrañas y peligros.
                     </p>
                     <p>
-                        Para descargar Don't Starve, utiliza el siguiente enlace:
-                        <a href="https://www.mediafire.com/file/yzx567/Dont_Starve.rar/file" target="_blank" class="btn">Descargar Don't Starve</a>.
-                    </p>
-                </article>
-                <article class="juego">
-                    <h3>Raft 🏝️</h3>
-                    <img src="https://raw.githubusercontent.com/Glythy/Glythyme/main/Raft.jpg" alt="Raft">
-                    <p>
-                        Raft es un juego de supervivencia en el océano con construcción y exploración. Construye y mejora tu balsa mientras navegas por aguas peligrosas y descubres nuevas islas.
-                    </p>
-                    <p>
-                        Para descargar Raft, utiliza el siguiente enlace:
-                        <a href="https://www.mediafire.com/file/abc890/Raft.rar/file" target="_blank" class="btn">Descargar Raft</a>.
-                    </
+                        Para descargar Don't Starve, utiliza
